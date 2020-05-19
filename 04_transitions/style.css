@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: silver;
+}
+
+.title {
+  position: absolute;
+  display: block;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.title p {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #fdcb9e;
+  text-shadow: 0.5rem 0.5rem 0.5rem #3f3f44;
+}
+
+.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 58rem;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: font-size 0.7s ease-in-out, -webkit-box-flex 0.7s cubic-bezier(0.15, -0.64, 0.36, 0.94), -webkit-filter 0.2s;
+  transition: font-size 0.7s ease-in-out, -webkit-box-flex 0.7s cubic-bezier(0.15, -0.64, 0.36, 0.94), -webkit-filter 0.2s;
+  transition: font-size 0.7s ease-in-out, flex 0.7s cubic-bezier(0.15, -0.64, 0.36, 0.94), filter 0.2s;
+  transition: font-size 0.7s ease-in-out, flex 0.7s cubic-bezier(0.15, -0.64, 0.36, 0.94), filter 0.2s, -webkit-box-flex 0.7s cubic-bezier(0.15, -0.64, 0.36, 0.94), -ms-flex 0.7s cubic-bezier(0.15, -0.64, 0.36, 0.94), -webkit-filter 0.2s;
+  -webkit-filter: grayscale(87%) sepia(28%) saturate(0%) contrast(134%);
+          filter: grayscale(87%) sepia(28%) saturate(0%) contrast(134%);
+}
+
+.image p {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #cceabb;
+  text-shadow: 0.5rem 0.5rem 0.5rem #3f3f44;
+}
+
+.image.open {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  -webkit-filter: none;
+          filter: none;
+}
+
+.image.open p {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.image > * {
+  margin: 0;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.image1 {
+  background-image: url(images/grunge.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image2 {
+  background-image: url(images/goth.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image3 {
+  background-image: url(images/afro-punk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image4 {
+  background-image: url(images/hip-hop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 32em) {
+  .images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .image.open {
+    -webkit-box-flex: 12;
+        -ms-flex: 12;
+            flex: 12;
+  }
+  .title {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
