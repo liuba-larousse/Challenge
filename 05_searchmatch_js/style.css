@@ -1,0 +1,77 @@
+/* PRESETS*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/*BODY*/
+body {
+  background-repeat: no-repeat;
+  background: linear-gradient(18deg, #e71cc9 0%, #8482e3 23%, #1deffd 46%, #bcfc45 83%);
+  background-attachment: fixed;
+}
+
+/*SEARCH FORM*/
+.search-form {
+  width: 40rem;
+  margin: 10rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.search-form input {
+  height: 5rem;
+  width: 35rem;
+  margin: auto;
+  border: none;
+}
+
+.search-form :placeholder-shown {
+  text-align: center;
+}
+
+.suggestions li {
+  list-style: none;
+  height: 5rem;
+  width: 35rem;
+  background-color: rgba(132, 130, 227, 0.5);
+  margin: auto;
+  line-height: 5rem;
+}
+
+.suggestions li:nth-child(even) {
+  background: #fafc04;
+  background: -webkit-gradient(linear, left top, right top, from(#fafc04), to(#8ef54c));
+  background: linear-gradient(90deg, #fafc04 0%, #8ef54c 100%);
+}
+
+.suggestions li:nth-child(odd) {
+  background: #fafc04;
+  background: -webkit-gradient(linear, right top, left top, from(#fafc04), to(#8ef54c));
+  background: linear-gradient(270deg, #fafc04 0%, #8ef54c 100%);
+}
+
+.hl {
+  background: #8ef54c;
+}
+/*# sourceMappingURL=style.css.map */
