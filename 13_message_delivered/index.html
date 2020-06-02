@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Secret Door</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Message you would like to pass</h1>
+      <input class="input" type="text" id="msg" />
+      <button class="button" type="submit" id="btn" onkeypress="shiftKey()">
+        Submit
+      </button>
+      <h1>Last message delivered</h1>
+      <h1 id="values"></h1>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
