@@ -1,0 +1,45 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    line-height: 1;
+    font-size: 1.6rem;
+    background-color: #639a67;
+}
+
+.box {
+    display: flex;
+    margin: 0 auto;
+    transform: translateY(5rem);
+    width: 60rem;
+    height: 40rem;
+    border-radius: 2rem;
+    border: 2rem #d8ebb5 solid;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 42%;
+    width: auto;
+    padding: 1.6rem;
+    background-color: #d8ebb5;
+    color: #2b580c;
+    font-size: large;
+    transition: 0.7s;
+    border-radius: 15%;
+    transform: translateX(-5rem);
+}
+
+.next {
+    right: 0;
+    transform: translateX(5rem);
+}
+
+.slides {
+    display: none;
+}
