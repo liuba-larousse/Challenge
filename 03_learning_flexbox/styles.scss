@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    padding: 0rem;
+    margin: 0rem;
+    height: 100%;
+
+
+}
+
+//Variables
+$baseblue:#04a3d3;
+$orange:#ff5722;
+$basetext:rgba(0, 0, 0, 0.8);
+// ______________FLEX AND NAV BAR__________
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.flex-container {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    padding-top: 1.7rem;
+    height: 5rem;
+    color: black;
+    font-size: 1.3rem;
+    background-color: rgba(206, 176, 65, 0.3);
+
+    a:hover,
+    a:focus {
+        border-bottom: 2px solid $basetext;
+        transition-duration: 0.5s;
+    }
+
+    .homepage {
+        margin-left: 2rem;
+        text-align: left;
+    }
+
+    .collection {
+        margin-right: auto;
+        margin-left: 2rem;
+        text-align: left;
+    }
+
+    .search {
+        text-align: right;
+        margin-right: 1rem;
+    }
+
+    .account {
+        margin-left: auto;
+        margin-right: 2rem;
+        text-align: right;
+    }
+
+    .cart {
+        margin-right: 2em;
+        text-align: right;
+    }
+
+    .bag {
+        margin-right: 2rem;
+        text-align: right;
+
+    }
+}
+
+// .container>div {
+//     flex: 1;
+//     /*flex-grow, flex-shrink, flex-basts*/
+// }
+
+.flex-container>.collection {
+    flex: 2;
+    /*flex-grow, flex-shrink, flex-basis*/
+}
+
+.flex-container>.account {
+    flex: 2;
+}
+
+
+
+//______________GRID AND LAYOUT_____________
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+
+    .media {
+        background-color: $orange;
+        grid-column: 1/2;
+        grid-row: 1/-1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 7rem;
+
+        .social {
+            color: $basetext;
+            height: fit-content;
+            margin-top: 2rem;
+        }
+
+        a:hover,
+        a:focus {
+            font-size: 1.2rem;
+            transition-duration: 0.5s;
+        }
+    }
+
+    .left {
+        background-image: url(images/bg-index.jpg);
+        background-color: $baseblue;
+        background-blend-mode: overlay;
+        background-size: cover;
+        grid-column: 2/11;
+        grid-row: 1/-1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+
+        p {
+            font-size: 3rem;
+            color: $orange;
+            font-family: 'Cabin Sketch', cursive;
+            text-transform: uppercase;
+            height: fit-content;
+            transform: translateY(10rem);
+
+        }
+
+
+    }
+
+    .right-top {
+        background-color: #f6edcf;
+        grid-column: 11/-1;
+        grid-row: 1/7;
+    }
+
+    .right-bottom {
+        background-color: #a4d7e1;
+        grid-column: 11/-1;
+        grid-row: 7/-1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+        justify-content: flex-end;
+
+        h1,
+        p {
+            height: fit-content;
+            text-transform: uppercase;
+            margin: 0 2rem 1rem 2rem;
+        }
+    }
+
+    .img-left {
+        grid-column: 10/13;
+        grid-row: 3/8;
+        z-index: 2;
+        background-image: url(images/index_img1.jpg);
+        background-size: cover;
+    }
+
+    .overlay-left {
+        grid-column: 10/13;
+        grid-row: 3/8;
+        z-index: 3;
+        background-color: $baseblue;
+        opacity: 0.2;
+    }
+
+    .img-right {
+        grid-column: 14/-1;
+        grid-row: 3/8;
+        z-index: 2;
+        background-image: url(images/index_img2.jpg);
+        background-size: cover;
+    }
+
+    .overlay-right {
+        grid-column: 14/-1;
+        grid-row: 3/8;
+        z-index: 2;
+        background-color: $baseblue;
+        opacity: 0.2;
+    }
+}
