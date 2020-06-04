@@ -1,0 +1,80 @@
+:root {
+    --init: black;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.main {
+    width: 10rem;
+    height: 20rem;
+    margin: .5rem;
+    text-align: center;
+}
+
+.box-1 {
+    background-color: var(--init);
+}
+
+.box-2 {
+    background-color: var(--init);
+}
+
+.box-3 {
+    background-color: var(--init);
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.neut {
+    width: 15.5rem;
+    height: 8rem;
+    margin: .5rem;
+}
+
+.box-4 {
+    background-color: var(--init);
+}
+
+.box-5 {
+    background-color: var(--init);
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.acc {
+    width: 6.5rem;
+    height: 6.5rem;
+    margin: .5rem;
+}
+
+.box-6 {
+    background-color: var(--init);
+}
+
+.box-7 {
+    background-color: var(--init);
+}
+
+.box-8 {
+    background-color: var(--init);
+}
+
+.box-9 {
+    background-color: var(--init);
+}
+
+.container-main {
+    display: flex;
+    flex-direction: row;
+
+}
