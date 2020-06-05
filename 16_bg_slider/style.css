@@ -1,4 +1,14 @@
-html {
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
@@ -7,9 +17,29 @@ html {
 }
 
 body {
-  line-height: 1;
+  width: 100%;
+  height: 100%;
   font-size: 1.6rem;
-  background-color: #639a67;
+  background-color: #649d66;
+  background-image: repeating-linear-gradient(41.4deg, #f6f578, #f6f578 0.1rem, transparent 0.1rem, transparent 2rem, #f6d743 2rem, #f6d743 2.1rem, transparent 2.1rem, transparent 3rem, #f5a31a 3rem, #f5a31a 3.1rem, transparent 3.1rem, transparent 5rem, #06623b 5rem, #06623b 5.1rem, transparent 5.1rem, transparent 6rem);
+  background-size: cover;
+}
+
+.header {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h1 {
+  color: #f6f578;
+  font-family: 'Gugi', cursive;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
 }
 
 .box {
@@ -17,8 +47,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  -webkit-transform: translateY(5rem);
-          transform: translateY(5rem);
+  -webkit-transform: translateY(10rem);
+          transform: translateY(10rem);
   width: 60rem;
   height: 40rem;
   border-radius: 2rem;
@@ -48,6 +78,6 @@ body {
 }
 
 .slides {
-  display: none;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

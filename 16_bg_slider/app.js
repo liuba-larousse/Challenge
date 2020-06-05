@@ -1,34 +1,31 @@
 const btnPrev = document.querySelector(".prev")
 const btnNext = document.querySelector(".next")
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var img = document.getElementById("slide");
+//start point
+var i = 1;
+var slides = [];
 
-function nextImage(n) {
-    showSlides(slideIndex += n)
+
+//image list
+slides[0] = "images/slide1.jpeg"
+slides[1] = "images/slide2.jpeg"
+slides[2] = "images/slide3.jpeg"
+slides[3] = "images/slide4.jpeg"
+slides[4] = "images/slide5.jpeg"
+
+//Change the image
+function plusSlide() {
+    console.log("click")
+    img.src = slides[i];
+    if (i < slides.length - 1) {
+        i++;
+    } else {
+        i = 0;
+    }
+    img.style.transition = "1s"
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName('slides');
-    if (n > slides.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"
-    }
-    slides[slideIndex - 1].style.display = "block";
-}
-
-
-
-
-btnNext.addEventListener("click", nextImage)
-btnPrev.addEventListener("click", prevImage)
+btnNext.addEventListener("click", plusSlide)
+btnPrev.addEventListener("click", plusSlide)
