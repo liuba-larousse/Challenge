@@ -1,3 +1,20 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -12,6 +29,11 @@ body {
 }
 
 h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+p {
     font-size: 2.5rem;
 }
 
@@ -52,4 +74,5 @@ h1 {
 #values {
     color: #e84a5f;
     text-transform: uppercase;
+    padding-bottom: 2rem;
 }
