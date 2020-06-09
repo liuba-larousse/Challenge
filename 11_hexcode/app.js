@@ -9,12 +9,11 @@ function hexChange() {
             el = values[Math.floor(Math.random() * values.length)];
             hex.push(el)
         }
-        console.log(hex)
-        document.body.style.backgroundColor = "#" + hex[0] + hex[1] + hex[2] + hex[3] + hex[4] + hex[5];
-        document.querySelector(".btn-name").innerHTML = "HEX COLOR: #" + hex[0] + hex[1] + hex[2] + hex[3] + hex[4] + hex[5]
-    } else {
-        hex.splice(0, hex.length);
+        const hexColor = hex.join('')
+        document.body.style.backgroundColor = `#${hexColor}`;
+        document.querySelector(".btn-name").innerHTML = `HEX COLOR: # ${hexColor}`
     }
+    hex = []
 }
 
 btn.addEventListener("click", hexChange)
