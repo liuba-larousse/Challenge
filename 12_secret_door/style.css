@@ -16,6 +16,7 @@ h1 {
 }
 
 h1 span {
+  color: #ff9c71;
   text-transform: uppercase;
   text-decoration: line-through;
 }
