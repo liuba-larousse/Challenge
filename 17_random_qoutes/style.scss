@@ -1,0 +1,137 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+//HEADER
+
+h1 {
+  font-size: 4rem;
+  color: #fffb22;
+  text-align: center;
+  font-family: "Black Ops One", cursive;
+}
+
+.header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+//BACKGROUNDS
+
+.isolate {
+  z-index: -1;
+  isolation: isolate;
+  position: relative;
+}
+
+.bg {
+  width: 100%;
+  height: 36rem;
+  mix-blend-mode: soft-light;
+  position: absolute;
+}
+
+.bg1 {
+  background-image: url(../17_random_qoutes/images/bg1.jpeg);
+  background-size: cover;
+  filter: saturate(85%);
+}
+
+.bg2 {
+  background-image: url(../17_random_qoutes/images/bg2.jpeg);
+  background-size: cover;
+  filter: blur(1px);
+}
+
+.bg3 {
+  background-image: linear-gradient(
+    25deg,
+    #fffb22 30%,
+    transparent 30% 75%,
+    #fffb22 75% 80%,
+    transparent 80% 90%,
+    #fffb22 90% 95%,
+    transparent 95%
+  );
+}
+
+//BOX WITH CONTENT
+
+.flex-container {
+  width: 22rem;
+  height: 22rem;
+  border: solid 2px #fffb2277;
+  position: absolute;
+  left: 50%;
+  margin-left: (-11rem);
+  transform: translateY(10rem);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #faeee735;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: rgba(166, 26, 21, 0.605);
+}
+
+.btn {
+  width: 8rem;
+  height: 3rem;
+  background-color: #fffb2277;
+  font-size: 1rem;
+  border: #fffb22;
+  border-radius: 10px;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.quote {
+  margin: 1rem 2rem 0rem 2rem;
+}
+
+.author {
+  font-style: italic;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
