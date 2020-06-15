@@ -1,0 +1,251 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+i,
+ul,
+li {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+}
+
+
+:root {
+    --bg-color: #FFFFFF;
+    --bg-2-color: #32e0c4;
+    --bg-3-color: #2fc4b2;
+    --ligher-text: #393e46;
+    --darker-text: #222831;
+}
+
+// header
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--darker-text);
+    margin-top: 3rem;
+    letter-spacing: 0.5rem;
+}
+
+// filter buttons
+
+.flex-container {
+    margin: 0 auto;
+    width: 80%;
+    height: fit-content;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 0 1 auto;
+}
+
+.button {
+    height: 5rem;
+    width: 17rem;
+    background-image: linear-gradient(135deg, var(--bg-2-color) 0 40%, var(--bg-3-color)40% 60%, var(--bg-2-color) 60%);
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    margin: 2rem 2rem;
+    transition: background-image 0.2s ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+    background-image: linear-gradient(135deg, var(--bg-2-color) 0 15%, var(--bg-3-color)15% 85%, var(--bg-2-color) 85%);
+    outline: none;
+    transition: background-image 1s ease-in-out;
+}
+
+
+// search bar
+
+.search {
+    display: block;
+    position: relative;
+    margin: 1rem auto;
+    height: 5rem;
+    width: 30rem;
+    color: var(--ligher-text);
+
+
+    input[type=search] {
+        height: 5rem;
+        width: 30rem;
+        padding-left: 4rem;
+        line-height: 2;
+        background: var(--bg-color);
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px var(--bg-2-color) solid;
+        color: var(--ligher-text);
+        font-size: 2rem;
+    }
+
+    input[type=search]:hover,
+    input[type=search]:focus {
+        outline: none;
+        background: var(--bg-color);
+    }
+
+
+    .search-icon {
+        position: absolute;
+        top: 25%;
+        z-index: 1;
+        margin-left: 1rem;
+        color: gray;
+        font-size: 2rem;
+    }
+}
+
+//grid
+
+.grid-container {
+    width: 80%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 10rem;
+    row-gap: 10rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+img {
+    width: 15.6rem;
+    height: 15.6rem;
+}
+
+.item-name,
+.item-price {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+
+}
+
+//modal
+
+.modal-card {
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    transform: translateX(-21rem);
+    top: 10%;
+    background-color: var(--bg-color);
+    border-radius: 2rem;
+    border: black solid 1px;
+    padding: 3rem;
+
+    img {
+        border-radius: 2rem;
+        height: 40rem;
+        width: 40rem;
+    }
+
+    .prev,
+    .next,
+    .close {
+        position: absolute;
+        top: 42%;
+        width: auto;
+        padding: 1.6rem;
+        background-color: var(--bg-2-color);
+        color: var(--ligher-text);
+        font-size: large;
+        border-radius: 50%;
+
+    }
+
+    .next {
+        right: 1rem;
+    }
+
+    .prev {
+        left: 1rem;
+    }
+
+    .close {
+        right: -2rem;
+        top: -2rem;
+        width: 5rem;
+        text-align: center;
+        background-color: var(--bg-color);
+        border: 1px black solid;
+    }
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+// .modal-overlay {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 1;
+//     background-color: black;
+// }
+
+
+// media
+
+@media only screen and (max-width: 56.25rem) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+@media only screen and (max-width: 32rem) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}

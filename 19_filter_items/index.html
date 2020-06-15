@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+  />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="modal-overlay"></div>
+    <!-- header -->
+    <div class="header"><h1>Headphone Shop</h1></div>
+    <!-- filter bottons -->
+    <div class="flex-container">
+      <button class="button all" data-filter="all">All</button>
+      <button class="button headphones" data-filter="headphones">Headphones</button>
+      <button class="button earbuds" data-filter="earbuds">Earbuds</button>
+      <button class="button speakers" data-filter="speakers">Speakers</button>
+    </div>
+    <!-- search bar -->
+    <div class="search">
+        <span class="search-icon"><i class="fas fa-headphones "></i></i></span>
+      <input
+        type="search"
+        name="search"
+        class="search-bar"
+        placeholder="Search..."
+      />
+    </div>
+
+    <!-- item cards -->
+
+    <div class="grid-container earbuds">
+      <!-- card 1 -->
+      <div class="card all earbuds">
+        <div class="img-container">
+          <img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/237/7569/fdf299aac4d225c32b5901ed4f855e3d419b612bb526d33d2eb08c0f97a2ad31__07370.1591295091.jpg?c=2" alt="" />
+        </div>
+        <div class="card-body">
+          <p class="item-name">Earbuds Baleine</p>
+          <p class="item-price">$49.99</p>
+        </div>
+        <a class="modal-button hidden prev"><i class="fas fa-chevron-left"></i></a>
+        <a class="modal-button hidden next"><i class="fas fa-chevron-right"></i></a>
+        <a class="modal-button hidden close"><i class="fas fa-times"></i></a>
+      </div>
+      <!-- card 2 -->
+      <div class="card all headphones">
+        <div class="img-container">
+          <img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/160/4432/4ab5b22c06f9ce8c9548b96e59961a4dad9c596c8c8a3c5e7dca9fea48f6f044__06490.1556605229.jpg?c=2" alt="" />
+        </div>
+        <div class="card-body">
+          <p class="item-name">Headphones Doux</p>
+          <p class="item-price">$79.99</p>
+        </div>
+        <a class="modal-button hidden prev"><i class="fas fa-chevron-left"></i></a>
+        <a class="modal-button hidden next"><i class="fas fa-chevron-right"></i></a>
+        <a class="modal-button hidden close"><i class="fas fa-times"></i></a>
+      </div>
+      <!-- card 3 -->
+      <div class="card all earbuds">
+        <div class="img-container">
+          <img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/236/7562/1d35da69e39c8eb1adf965ee94dddaafa34d56438511e4deba0e72f1700826d4__47925.1591207490.jpg?c=2" alt="" />
+        </div>
+        <div class="card-body">
+          <p class="item-name">Earbuds Brume</p>
+          <p class="item-price">$49.99</p>
+        </div>
+        <a class="modal-button hidden prev"><i class="fas fa-chevron-left"></i></a>
+        <a class="modal-button hidden next"><i class="fas fa-chevron-right"></i></a>
+        <a class="modal-button hidden close"><i class="fas fa-times"></i></a>
+      </div>
+      <!-- card 4 -->
+      <div class="card all headphones">
+        <div class="img-container">
+          <img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/188/7135/420aab977d369d62d3282138fff585ded01764f1a7d68b53888a0d13fcb6b8e4__87851.1584751633.jpg?c=2" alt="" />
+        </div>
+        <div class="card-body">
+          <p class="item-name">Headphones Ange</p>
+          <p class="item-price">$39.99</p>
+        </div>
+        <a class="modal-button hidden prev"><i class="fas fa-chevron-left"></i></a>
+        <a class="modal-button hidden next"><i class="fas fa-chevron-right"></i></a>
+        <a class="modal-button hidden close"><i class="fas fa-times"></i></a>
+      </div>
+      <!-- card 5 -->
+      <div class="card all speakers">
+        <div class="img-container">
+          <img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/119/425/efb2c2cfa3ca3406f9f1a50b9f1e80485d5ca20d8fbcef7cdc7d7f65846c56b2__41486.1518490159.jpg?c=2" alt="" />
+        </div>
+        <div class="card-body">
+          <p class="item-name">Speakers Etoile</p>
+          <p class="item-price">$99.99</p>
+        </div>
+        <a class="modal-button hidden prev"><i class="fas fa-chevron-left"></i></a>
+        <a class="modal-button hidden next"><i class="fas fa-chevron-right"></i></a>
+        <a class="modal-button hidden close"><i class="fas fa-times"></i></a>
+      </div>
+      <!-- card 6 -->
+      <div class="card all headphones">
+        <div class="img-container">
+          <img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/128/5105/3900fb6c225f20ff75e50f80cd7eade61e41cd65a1c9c8fe6277e459369879bc__26390.1563552350.jpg?c=2" alt="" />
+        </div>
+        <div class="card-body">
+          <p class="item-name">Headphones Luciole</p>
+          <p class="item-price">$69.99</p>
+        </div>
+        <a class="modal-button hidden prev"><i class="fas fa-chevron-left"></i></a>
+        <a class="modal-button hidden next"><i class="fas fa-chevron-right"></i></a>
+        <a class="modal-button hidden close"><i class="fas fa-times"></i></a>
+      </div>
+      <!-- card 7 -->
+      <div class="card all speakers">
+        <div class="img-container">
+          <img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/120/447/b7037dc50afada1190648b7ca0be18f85e35975b39b0b744240b6f55f951af30__02334.1518490204.jpg?c=2" alt="" />
+        </div>
+        <div class="card-body">
+          <p class="item-name">Speakers Plaisir</p>
+          <p class="item-price">$109.99</p>
+        </div>
+        <a class="modal-button hidden prev"><i class="fas fa-chevron-left"></i></a>
+        <a class="modal-button hidden next"><i class="fas fa-chevron-right"></i></a>
+        <a class="modal-button hidden close"><i class="fas fa-times"></i></a>
+      </div>
+      <!-- card 8 -->
+      <div class="card all headphones">
+        <div class="img-container">
+          <img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/155/6577/2b0942b85b4abeb38b4a679bd9dc517fa5750b248154ce76697c9e011e85a103__32326.1579319584.jpg?c=2" alt="" />
+        </div>
+        <div class="card-body">
+          <p class="item-name">Headphones Soleil</p>
+          <p class="item-price">39.99</p>
+        </div>
+        <a class="modal-button hidden prev"><i class="fas fa-chevron-left"></i></a>
+        <a class="modal-button hidden next"><i class="fas fa-chevron-right"></i></a>
+        <a class="modal-button hidden close"><i class="fas fa-times"></i></a>
+      </div>
+      <!-- card 9 -->
+      <div class="card all earbuds">
+        <div class="img-container">
+          <img src="https://cdn11.bigcommerce.com/s-k11cg5mzh9/images/stencil/500x659/products/190/7339/a996d77e6201fc2fa578df224c5716f20f8328f06371b0b5e61010f083b76148__84463.1588868682.jpg?c=2" alt="" />
+        </div>
+        <div class="card-body">
+          <p class="item-name">Earbuds Tournesol</p>
+          <p class="item-price">$49.99</p>
+        </div>
+         <a class="modal-button hidden prev"><i class="fas fa-chevron-left"></i></a>
+        <a class="modal-button hidden next"><i class="fas fa-chevron-right"></i></a>
+        <a class="modal-button hidden close"><i class="fas fa-times"></i></a>
+      </div>
+       
+    </div>
+  
+    <script src="app.js"></script>
+  </body>
+</html>
