@@ -1,10 +1,10 @@
-const btnPrev = document.querySelector(".prev")
-const btnNext = document.querySelector(".next")
+const left = document.querySelector(".prev")
+const right = document.querySelector(".next")
 
-var img = document.getElementById("slide");
+const img = document.getElementById("slide");
 //start point
-var i = 1;
-var slides = [];
+let i = 1;
+const slides = [];
 
 
 //image list
@@ -14,18 +14,23 @@ slides[2] = "images/slide3.jpeg"
 slides[3] = "images/slide4.jpeg"
 slides[4] = "images/slide5.jpeg"
 
+
 //Change the image
-function plusSlide() {
-    console.log("click")
+function rightSlide() {
     img.src = slides[i];
-    if (i < slides.length - 1) {
-        i++;
-    } else {
-        i = 0;
-    }
-    img.style.transition = "1s"
+    i = (i < slides.length - 1) ?
+        i + 1 :
+        i = 0
+    debugger
 }
 
+function leftSlide() {
+    console.log("click")
+    img.src = slides[i];
+    i = i < 1 ?
+        i = slides.length - 1 :
+        i - 1
+}
 
-btnNext.addEventListener("click", plusSlide)
-btnPrev.addEventListener("click", plusSlide)
+right.addEventListener("click", rightSlide)
+left.addEventListener("click", leftSlide)
