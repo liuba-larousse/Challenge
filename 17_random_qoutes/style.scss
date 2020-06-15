@@ -58,7 +58,7 @@ h1 {
 
 .bg {
   width: 100%;
-  height: 36rem;
+  min-height: 100vh;
   mix-blend-mode: soft-light;
   position: absolute;
 }
@@ -76,15 +76,13 @@ h1 {
 }
 
 .bg3 {
-  background-image: linear-gradient(
-    25deg,
-    #fffb22 30%,
-    transparent 30% 75%,
-    #fffb22 75% 80%,
-    transparent 80% 90%,
-    #fffb22 90% 95%,
-    transparent 95%
-  );
+  background-image: linear-gradient(25deg,
+      #fffb22 30%,
+      transparent 30% 75%,
+      #fffb22 75% 80%,
+      transparent 80% 90%,
+      #fffb22 90% 95%,
+      transparent 95%);
 }
 
 //BOX WITH CONTENT
