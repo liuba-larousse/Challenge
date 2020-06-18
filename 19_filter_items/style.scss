@@ -70,6 +70,7 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
     flex: 0 1 auto;
+    flex-wrap: wrap;
 }
 
 .button {
@@ -104,33 +105,44 @@ h1 {
     width: 30rem;
     color: var(--ligher-text);
 
+    .visuallyhidden {
+        display: none;
+    }
+
+    form[role=search] {
+        height: 5rem;
+        width: 30rem;
+    }
+
+    form[role=search]:hover,
+    form[role=search]:focus {
+        outline: none;
+    }
 
     input[type=search] {
         height: 5rem;
         width: 30rem;
-        padding-left: 4rem;
-        line-height: 2;
-        background: var(--bg-color);
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: 1px var(--bg-2-color) solid;
+        border: none;
         color: var(--ligher-text);
         font-size: 2rem;
+        box-shadow: none;
+        padding-left: 2.5rem;
+        border-bottom: 1px var(--bg-2-color) solid;
+        -webkit-appearance: none;
     }
 
     input[type=search]:hover,
     input[type=search]:focus {
         outline: none;
-        background: var(--bg-color);
+        -webkit-appearance: none;
     }
+
 
 
     .search-icon {
         position: absolute;
         top: 25%;
         z-index: 1;
-        margin-left: 1rem;
         color: gray;
         font-size: 2rem;
     }
