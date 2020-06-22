@@ -23,7 +23,8 @@ li {
 }
 
 ol,
-ul {
+ul,
+li {
   list-style: none;
 }
 
@@ -76,6 +77,8 @@ h1 {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .button {
@@ -110,31 +113,43 @@ h1 {
   color: var(--ligher-text);
 }
 
+.search .visuallyhidden {
+  display: none;
+}
+
+.search form[role=search] {
+  height: 5rem;
+  width: 30rem;
+}
+
+.search form[role=search]:hover,
+.search form[role=search]:focus {
+  outline: none;
+}
+
 .search input[type=search] {
   height: 5rem;
   width: 30rem;
-  padding-left: 4rem;
-  line-height: 2;
-  background: var(--bg-color);
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px var(--bg-2-color) solid;
+  border: none;
   color: var(--ligher-text);
   font-size: 2rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding-left: 2.5rem;
+  border-bottom: 1px var(--bg-2-color) solid;
+  -webkit-appearance: none;
 }
 
 .search input[type=search]:hover,
 .search input[type=search]:focus {
   outline: none;
-  background: var(--bg-color);
+  -webkit-appearance: none;
 }
 
 .search .search-icon {
   position: absolute;
   top: 25%;
   z-index: 1;
-  margin-left: 1rem;
   color: gray;
   font-size: 2rem;
 }
@@ -215,7 +230,7 @@ img {
 .modal-card .close {
   right: -2rem;
   top: -2rem;
-  width: 5rem;
+  width: 10rem;
   text-align: center;
   background-color: var(--bg-color);
   border: 1px black solid;
@@ -223,6 +238,19 @@ img {
 
 .hidden {
   display: none;
+}
+
+dialog[open] {
+  -webkit-animation: appear 0.15s cubic-bezier(0, 1.8, 1, 1.8);
+          animation: appear 0.15s cubic-bezier(0, 1.8, 1, 1.8);
+}
+
+dialog::-webkit-backdrop {
+  background: linear-gradient(45deg, rgba(0, 143, 104, 0.5), rgba(250, 224, 66, 0.5));
+}
+
+dialog::backdrop {
+  background: linear-gradient(45deg, rgba(0, 143, 104, 0.5), rgba(250, 224, 66, 0.5));
 }
 
 @media only screen and (max-width: 56.25rem) {

@@ -39,84 +39,60 @@ input.addEventListener("keyup", (e) => {
 });
 
 //Modal
+const close = document.querySelector(".close");
+const modal = document.querySelector(".template");
+
+function popModal(e) {
+  let cardId = parseInt(e.target.parentElement.parentElement.dataset.card);
+
+  const img = document
+    .querySelector(`[data-card="${cardId}"]`)
+    .querySelector(".img-container");
+  const cardBody = document
+    .querySelector(`[data-card="${cardId}"]`)
+    .querySelector(".card-body");
+  modal.classList.remove("hidden");
+  modal.querySelector(".img-container").innerHTML = img.innerHTML;
+  modal.querySelector(".card-body").innerHTML = cardBody.innerHTML;
+}
+
+function hideModal() {
+  modal.classList.add("hidden");
+}
 
 items.forEach(function (item) {
-  const modalButtons = item.querySelectorAll(".modal-button");
-  const img = item.querySelector(".img-container");
-  const close = item.querySelectorAll(".close");
-
-  function addClass() {
-    item.classList.add("modal-card");
-    modalButtons.forEach(function (modalButton) {
-      modalButton.classList.remove("hidden");
-    });
-  }
-
-  img.addEventListener("click", addClass);
-
-  function removeClass() {
-    item.classList.remove("modal-card");
-    modalButtons.forEach(function (modalButton) {
-      modalButton.classList.add("hidden");
-    });
-  }
-  close.forEach(function (button) {
-    button.addEventListener("click", removeClass);
-  });
+  item.addEventListener("click", popModal);
+  close.addEventListener("click", hideModal);
 });
 
 //Carousel
 
-const slides = [];
-let i = 0;
-items.forEach(function (item) {
-  slides.push(item);
-});
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
+let img = document.querySelector(".img-container");
+let cardBody = document.querySelector(".card-body");
 
-items.forEach(function (item) {
-  const next = item.querySelector(".next");
-  const prev = item.querySelector(".prev");
-  const modalButtons = item.querySelectorAll(".modal-button");
-
-  function reset() {
-    if (item.classList.contains("modal-card")) {
-      item.classList.remove("modal-card");
-      modalButtons.forEach(function (button) {
-        button.classList.add("hidden");
-      });
-    }
+function nextSlide(e) {
+  console.log("click");
+  console.log(e.target.parentElement.parentElement);
+  if (i < 9) {
+    i++;
+  } else {
+    i = 0;
   }
+  modal.querySelector(".img-container").innerHTML = img.innerHTML;
+  modal.querySelector(".card-body").innerHTML = cardBody.innerHTML;
+}
 
-  function nextSlide() {
-    console.log("next");
-    if (i < slides.length - 1) {
-      i++;
-    } else {
-      i = 0;
-    }
-    console.log(slides[i]);
-    const curSlideButtons = slides[i].querySelectorAll(".modal-button");
-    reset();
-    slides[i].classList.add("modal-card");
-    curSlideButtons.forEach(function (button) {
-      button.classList.remove("hidden");
-    });
+function prevSlide() {
+  if (i === 0) {
+    i = 8;
   }
-
-  function prevSlide() {
-    console.log("prev");
-    if (i === 0) {
-      i = slides.length;
-    }
-    i--;
-    console.log(slides[i]);
-    const curSlideButtons = slides[i].querySelectorAll(".modal-button");
-    reset();
-    slides[i].classList.add("modal-card");
-    curSlideButtons.forEach(function (button) {
-      button.classList.remove("hidden");
-    });
-  }
+  i--;
+  modal.querySelector(".img-container").innerHTML = img.innerHTML;
+  modal.querySelector(".card-body").innerHTML = cardBody.innerHTML;
+}
+items.forEach(function () {
   next.addEventListener("click", nextSlide);
   prev.addEventListener("click", prevSlide);
 });
