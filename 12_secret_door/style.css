@@ -1,0 +1,44 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-size: 1.4rem;
+  background-color: #d3c0ff;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #0a97b0;
+}
+
+h1 span {
+  color: #ff9c71;
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+
+.main-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding-top: 3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+img {
+  margin: auto;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */
