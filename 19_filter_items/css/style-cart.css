@@ -1,0 +1,218 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+i,
+ul,
+li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+}
+
+:root {
+  --bg-color: #FFFFFF;
+  --bg-2-color: #32e0c4;
+  --bg-3-color: #2fc4b2;
+  --bg-light-grey: #dddddd;
+  --ligher-text: #393e46;
+  --darker-text: #222831;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--darker-text);
+  padding: 1.2rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+a:focus,
+a:hover {
+  color: var(--bg-3-color);
+}
+
+.header-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80%;
+  margin: 2rem auto;
+  background-color: #2fc4b2;
+  height: 5rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: var(--bg-color);
+  font-size: 2rem;
+}
+
+.product-title,
+.product,
+.total-title {
+  width: 42%;
+  text-align: center;
+}
+
+.price-title,
+.price,
+.total-price {
+  width: 16%;
+  text-align: center;
+}
+
+.quantity-title,
+.quantity-box,
+.clear-all {
+  width: 16%;
+  text-align: center;
+}
+
+.product-total-title,
+.product-total {
+  width: 16%;
+  text-align: center;
+}
+
+.flex-cart-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+ul > :first-child {
+  border-top: solid 1px var(--bg-3-color);
+}
+
+.cart-item {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-left: solid 1px var(--bg-3-color);
+  border-right: solid 1px var(--bg-3-color);
+  border-bottom: solid 1px var(--bg-3-color);
+  border-top: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 1rem;
+}
+
+.quantity-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.btn-minus,
+.btn-plus {
+  color: var(--bg-3-color);
+  font-size: 1.6rem;
+  border: none;
+  outline: none;
+}
+
+.remove-btn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
+.total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: solid 1px var(--bg-3-color);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clear-all {
+  border: none;
+  height: 3rem;
+  background-color: var(--ligher-text);
+  color: var(--bg-color);
+  outline: none;
+  font-size: 1.6rem;
+}
+/*# sourceMappingURL=style-cart.css.map */

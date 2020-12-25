@@ -44,8 +44,43 @@ body {
   --bg-color: #FFFFFF;
   --bg-2-color: #32e0c4;
   --bg-3-color: #2fc4b2;
+  --bg-light-grey: #dddddd;
   --ligher-text: #393e46;
   --darker-text: #222831;
+}
+
+.flex-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 5rem;
+  background-color: var(--bg-light-grey);
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--darker-text);
+  padding: 1.2rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+a:focus,
+a:hover {
+  color: var(--bg-3-color);
+}
+
+.cart {
+  margin-left: auto;
 }
 
 h1 {
@@ -163,9 +198,9 @@ h1 {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  -webkit-column-gap: 10rem;
-          column-gap: 10rem;
-  row-gap: 10rem;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  row-gap: 2rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -185,6 +220,30 @@ img {
   text-align: center;
   font-size: 1.6rem;
   margin-top: 1rem;
+}
+
+.card {
+  padding: 3rem;
+  margin: 3rem;
+  position: relative;
+}
+
+.shop-btn {
+  border: none;
+  color: var(--ligher-text);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  font-size: 1.8rem;
+  background: transparent;
+}
+
+.shop-btn:hover,
+.shop-btn:focus {
+  color: var(--bg-3-color);
+  outline: none;
 }
 
 .modal-card {
@@ -246,11 +305,17 @@ dialog[open] {
 }
 
 dialog::-webkit-backdrop {
-  background: linear-gradient(45deg, rgba(0, 143, 104, 0.5), rgba(250, 224, 66, 0.5));
+  background: linear-gradient(45deg, rgba(0, 143, 104, 0.3), rgba(250, 224, 66, 0.3));
 }
 
 dialog::backdrop {
-  background: linear-gradient(45deg, rgba(0, 143, 104, 0.5), rgba(250, 224, 66, 0.5));
+  background: linear-gradient(45deg, rgba(0, 143, 104, 0.3), rgba(250, 224, 66, 0.3));
+}
+
+.fa-chevron-left,
+.fa-chevron-right,
+.fa-times {
+  pointer-events: none;
 }
 
 @media only screen and (max-width: 56.25rem) {
