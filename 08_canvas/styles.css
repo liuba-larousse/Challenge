@@ -1,8 +1,27 @@
 html,
 body {
     margin: 0;
+    overflow-x: hidden;
+    background: #ececec;
+
 }
 
+h1{
+    position: absolute;
+    color: #ececec;
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+}
 #canvas {
-    background: rgb(22, 22, 50);
+    background: #222831;
+    width: 100%;
+}
+
+p{
+color:#f2a365;
+width: 80%;
+margin: 1rem auto;
+font-size: 2rem;
+font-style: italic;
 }
