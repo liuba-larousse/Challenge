@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tip calculator</title>
+  </head>
+  <body>
+    <header><h1>Tip calculator</h1></header>
+    <div class="flex-box">
+      <div class="alert hidden">
+        <p class="alert-text">Bill Amount Can Not Be Blank</p>
+        <p class="alert-text">Number Of Users Must Be More Than Zero</p>
+        <p class="alert-text">You Must Select A Service</p>
+      </div>
+      <form action="">
+        <label for="bill-amount">How Much Was Your Bill?</label>
+        <span class="icon"><i class="fas fa-dollar-sign"></i></span>
+        <input type="number" name="bill-amount"" id="bill-amount" value="0"/>
+      </form>
+
+      <form action="">
+        <label for="split-amount">How many people sharing the Bill?</label>
+        <span class="icon"><i class="fas fa-user"></i></span>
+        <input type="number" name="split-amount" id="split-amount" value="0" />
+      </form>
+
+      <form action="">
+        <label for="tip-percent">How was your service?</label>
+        <div class="custom-select" style="width: 80%;">
+          <select
+            class="select-css"
+            name="tip-percent"
+            id="tip-percent"
+            aria-placeholder="Choose..."
+          >
+            <option value="0.25">Excellent 25%</option>
+            <option value="0.20">Good 20%</option>
+            <option value="0.15">Could be better 15%</option>
+          </select>
+        </div>
+      </form>
+      <button class="js-btn-calc">Calculate</button>
+    </div>
+    <div class="flex-box total-display hidden js-display-total">
+      <p>Your tip is</p>
+      <p class="total js-tip-total">$25</p>
+      <button class="js-btn-goback">Go back</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

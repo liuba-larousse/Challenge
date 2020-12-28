@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>To do list</title>
+  </head>
+  <body>
+    <header class="header"><h1>To do list</h1></header>
+    <main>
+      <div class="alert visuallyhidden js-alert">
+        <p>Please enter a new task fisrt</p>
+      </div>
+      <form class="flex-input" action="">
+        <label for="task" class="visuallyhidden">Input task</label>
+        <input type="text" name="task" id="task" />
+        <button class="btn-add js-btn-add">Add Item</button>
+      </form>
+      <ul class="flex-list js-list">
+        <!-- <div class="item">
+            <li class="value-output js-value-output">
+              <p>Add a first task</p>
+            </li>
+            <button class="btn-list js-btn-done">
+              <i class="far fa-check-square fa-2x"></i>
+            </button>
+            <button class="btn-list js-btn-edit">
+              <i class="far fa-edit fa-2x"></i>
+            </button>
+            <button class="btn-list js-btn-delete">
+              <i class="far fa-trash-alt fa-2x"></i>
+            </button>
+          </div> -->
+      </ul>
+      <div class="center">
+        <button class="btn-clear js-btn-clear">Clear Items</button>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
