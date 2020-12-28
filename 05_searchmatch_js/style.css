@@ -1,4 +1,8 @@
-/* PRESETS*/
+/**
+ * /* PRESETS
+ *
+ * @format
+ */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -21,11 +25,19 @@ html {
 /*BODY*/
 body {
   background-repeat: no-repeat;
-  background: linear-gradient(18deg, #e71cc9 0%, #8482e3 23%, #1deffd 46%, #bcfc45 83%);
+  background: url("./bg.png");
   background-attachment: fixed;
 }
 
 /*SEARCH FORM*/
+h1 {
+  color: white;
+  font-size: 5rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+}
+
 .search-form {
   width: 40rem;
   margin: 10rem auto;
@@ -54,24 +66,13 @@ body {
   list-style: none;
   height: 5rem;
   width: 35rem;
-  background-color: rgba(132, 130, 227, 0.5);
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#cbcbcb));
+  background: linear-gradient(180deg, white 0%, #cbcbcb 100%);
   margin: auto;
   line-height: 5rem;
 }
 
-.suggestions li:nth-child(even) {
-  background: #fafc04;
-  background: -webkit-gradient(linear, left top, right top, from(#fafc04), to(#8ef54c));
-  background: linear-gradient(90deg, #fafc04 0%, #8ef54c 100%);
-}
-
-.suggestions li:nth-child(odd) {
-  background: #fafc04;
-  background: -webkit-gradient(linear, right top, left top, from(#fafc04), to(#8ef54c));
-  background: linear-gradient(270deg, #fafc04 0%, #8ef54c 100%);
-}
-
 .hl {
-  background: #8ef54c;
+  background: #ee9595;
 }
 /*# sourceMappingURL=style.css.map */
