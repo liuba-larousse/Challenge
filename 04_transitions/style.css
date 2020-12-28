@@ -1,3 +1,4 @@
+/** @format */
 * {
   padding: 0;
   margin: 0;
@@ -12,14 +13,14 @@ body {
 
 .title {
   position: absolute;
-  display: block;
   width: 100%;
   text-align: center;
   z-index: 2;
 }
 
 .title p {
-  font-size: 5rem;
+  margin-top: 5%;
+  font-size: 6rem;
   text-transform: uppercase;
   color: #fdcb9e;
   text-shadow: 0.5rem 0.5rem 0.5rem #3f3f44;
@@ -29,7 +30,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 58rem;
+  height: 100vh;
   width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -124,6 +125,14 @@ body {
 }
 
 @media only screen and (max-width: 32em) {
+  .title {
+    left: 80%;
+  }
+  .title p {
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+  }
   .images {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -131,12 +140,9 @@ body {
             flex-direction: column;
   }
   .image.open {
-    -webkit-box-flex: 12;
-        -ms-flex: 12;
-            flex: 12;
-  }
-  .title {
-    display: none;
+    -webkit-box-flex: 10;
+        -ms-flex: 10;
+            flex: 10;
   }
 }
 /*# sourceMappingURL=style.css.map */
