@@ -1,36 +1,67 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
 
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
   <body>
+    <h1>Choose colors for your wardrobe</h1>
     <div class="container-main">
       <div class="container-big-1">
         <div class="container-1">
           <div class="colorbox main box-1" data-number="1">
-            <input type="color" name="1" id="color1" value="#000000" />
+            <input
+              type="color"
+              name="1"
+              id="color1"
+              value="#000000"
+            />
           </div>
 
           <div class="colorbox main box-2" data-number="2">
-            <input type="color" name="2" id="color2" value="#000000" />
+            <input
+              type="color"
+              name="2"
+              id="color2"
+              value="#000000"
+            />
           </div>
 
           <div class="colorbox main box-3" data-number="3">
-            <input type="color" name="3" id="color3" value="#000000" />
+            <input
+              type="color"
+              name="3"
+              id="color3"
+              value="#000000"
+            />
           </div>
         </div>
 
         <div class="container-2">
           <div class="colorbox neut box-4" data-number="4">
-            <input type="color" name="4" id="color4" value="#000000" />
+            <input
+              type="color"
+              name="4"
+              id="color4"
+              value="#000000"
+            />
           </div>
 
           <div class="colorbox neut box-5" data-number="5">
-            <input type="color" name="5" id="color5" value="#000000" />
+            <input
+              type="color"
+              name="5"
+              id="color5"
+              value="#000000"
+            />
           </div>
         </div>
       </div>
@@ -38,35 +69,60 @@
       <div class="container-big-2">
         <div class="container-3">
           <div class="colorbox acc box-6" data-number="6">
-            <input type="color" name="6" id="color6" value="#000000" />
+            <input
+              type="color"
+              name="6"
+              id="color6"
+              value="#000000"
+            />
           </div>
 
           <div class="colorbox acc box-7" data-number="7">
-            <input type="color" name="7" id="color7" value="#000000" />
+            <input
+              type="color"
+              name="7"
+              id="color7"
+              value="#000000"
+            />
           </div>
 
           <div class="colorbox acc box-8" data-number="8">
-            <input type="color" name="8" id="color8" value="#000000" />
+            <input
+              type="color"
+              name="8"
+              id="color8"
+              value="#000000"
+            />
           </div>
 
           <div class="colorbox acc box-9" data-number="9">
-            <input type="color" name="9" id="color9" value="#000000" />
+            <input
+              type="color"
+              name="9"
+              id="color9"
+              value="#000000"
+            />
           </div>
         </div>
       </div>
     </div>
 
     <script>
-      const inputs = document.querySelectorAll("input");
+      const inputs = document.querySelectorAll('input');
       function changeColor() {
         colorbox = document.querySelector(
           `.colorbox[data-number="${this.name}"]`
         );
 
-        colorbox.style.setProperty("background-color", this.value);
+        colorbox.style.setProperty(
+          'background-color',
+          this.value
+        );
       }
 
-      inputs.forEach((input) => input.addEventListener("change", changeColor));
+      inputs.forEach((input) =>
+        input.addEventListener('change', changeColor)
+      );
     </script>
   </body>
 </html>
