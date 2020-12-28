@@ -74,10 +74,10 @@ body {
   text-align: center;
   width: 80%;
   margin: 4rem auto;
-  -webkit-animation: colorchange 20s infinite alternate;
+  animation: colorchange 20s infinite alternate;
 }
 
-@-webkit-keyframes colorchange {
+@keyframes colorchange {
   0% {
     color: #40a4d8;
   }

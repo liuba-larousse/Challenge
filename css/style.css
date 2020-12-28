@@ -75,9 +75,46 @@ body {
   width: 80%;
   margin: 4rem auto;
   -webkit-animation: colorchange 20s infinite alternate;
+          animation: colorchange 20s infinite alternate;
 }
 
 @-webkit-keyframes colorchange {
+  0% {
+    color: #40a4d8;
+  }
+  10% {
+    color: #34bdb8;
+  }
+  20% {
+    color: #b2c323;
+  }
+  30% {
+    color: #fecc2e;
+  }
+  40% {
+    color: #faa227;
+  }
+  50% {
+    color: #f7631e;
+  }
+  60% {
+    color: #db3838;
+  }
+  70% {
+    color: #ee657a;
+  }
+  80% {
+    color: #a363d8;
+  }
+  90% {
+    color: #6268d6;
+  }
+  100% {
+    color: #2fa0fc;
+  }
+}
+
+@keyframes colorchange {
   0% {
     color: #40a4d8;
   }

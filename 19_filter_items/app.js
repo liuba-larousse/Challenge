@@ -1,6 +1,6 @@
 const buttons = document.querySelectorAll(".button");
 const items = document.querySelectorAll(".card");
-<<<<<<< HEAD
+
 const imgs = document.querySelectorAll(".img-container")
 
 //////////////////////////////Filter//////////////////////////////
@@ -9,7 +9,6 @@ buttons.forEach(function (button) {
   button.addEventListener("click", function (e) {
     e.preventDefault;
     const filter = e.target.dataset.filter;
-=======
 
 // Filter
 
@@ -20,7 +19,7 @@ buttons.forEach(function (button) {
     e.preventDefault;
     const filter = e.target.dataset.filter;
     console.log(filter);
->>>>>>> 630b920236ffa2b4db2d73e621b58212449d49c3
+
     items.forEach(function (item) {
       if (item.classList.contains(filter)) {
         item.style.display = "block";
@@ -31,7 +30,7 @@ buttons.forEach(function (button) {
   });
 });
 
-<<<<<<< HEAD
+
 //////////////////////////////Search-bar////////////////
 
 const input = document.getElementById("search-bar");
@@ -42,14 +41,14 @@ if (input) {
 }
 
 function searchBar(e) {
-=======
+
 //Search-bar
 
 const input = document.querySelector(".search-bar");
 const names = document.querySelectorAll(".item-name");
 
 input.addEventListener("keyup", (e) => {
->>>>>>> 630b920236ffa2b4db2d73e621b58212449d49c3
+
   //input field sring
   const filter = e.target.value.toLowerCase().trim();
   //applying filter to search
@@ -60,8 +59,8 @@ input.addEventListener("keyup", (e) => {
       name.parentElement.parentElement.style.display = "none";
     }
   });
-<<<<<<< HEAD
-};
+
+});
 
 //////////////////////////Modal///////////////////////////
 
@@ -80,8 +79,8 @@ function popModal(e) {
   let cardId = e.target.parentElement.parentElement.dataset.card;
   modal.dataset.card = cardId
   // modal.dataset.card = cardId
-=======
-});
+
+};
 
 //Modal
 const close = document.querySelector(".close");
@@ -90,7 +89,6 @@ const modal = document.querySelector(".template");
 function popModal(e) {
   let cardId = parseInt(e.target.parentElement.parentElement.dataset.card);
 
->>>>>>> 630b920236ffa2b4db2d73e621b58212449d49c3
   const img = document
     .querySelector(`[data-card="${cardId}"]`)
     .querySelector(".img-container");
@@ -103,13 +101,13 @@ function popModal(e) {
 }
 
 function hideModal() {
-<<<<<<< HEAD
+
   modal.close();
 }
 
 ///////////////////////////////Carousel///////////////////////
 
-=======
+
   modal.classList.add("hidden");
 }
 
@@ -119,14 +117,13 @@ items.forEach(function (item) {
 });
 
 //Carousel
->>>>>>> 630b920236ffa2b4db2d73e621b58212449d49c3
+
 
 const next = document.querySelector(".next");
 const prev = document.querySelector(".prev");
 let img = document.querySelector(".img-container");
 let cardBody = document.querySelector(".card-body");
 
-<<<<<<< HEAD
 
 items.forEach(function () {
   next.addEventListener("click", nextSlide);
@@ -408,7 +405,7 @@ function removeCartItem() {
 
 onLoadCartNumbers()
 dispalyCart()
-=======
+
 function nextSlide(e) {
   console.log("click");
   console.log(e.target.parentElement.parentElement);
@@ -433,4 +430,4 @@ items.forEach(function () {
   next.addEventListener("click", nextSlide);
   prev.addEventListener("click", prevSlide);
 });
->>>>>>> 630b920236ffa2b4db2d73e621b58212449d49c3
+
