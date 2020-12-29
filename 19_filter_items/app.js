@@ -101,7 +101,6 @@ function popModal(e) {
 }
 
 function hideModal() {
-
   modal.close();
 }
 

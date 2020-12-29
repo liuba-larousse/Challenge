@@ -1,3 +1,5 @@
+/** @format */
+
 body,
 div,
 h1,
@@ -17,18 +19,14 @@ li {
 
 html {
   font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   height: 100%;
 }
 
 body {
   font-size: 2rem;
   color: var(--text-color);
-  background: linear-gradient(
-    200deg,
-    rgba(91, 91, 115, 1) 0%,
-    rgba(43, 43, 52, 1) 79%
-  );
+  background: white;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -37,17 +35,19 @@ body {
 
 :root {
   --bg-color: #23262b;
-  --bg-color-light: #fceaeb;
+  --bg-color-light: white;
   --text-color: #c3babc;
   --accent-color: #fb5763;
   --accent-color-half: rgba(251, 87, 98, 0.5);
 }
 
 h1 {
-  font-family: "MuseoModerno", cursive;
+  font-family: 'MuseoModerno', cursive;
   font-size: 5rem;
   text-transform: uppercase;
   text-align: center;
+  color: #23262b;
+  margin-top: 5%;
 }
 
 //Flexbox
@@ -63,7 +63,7 @@ h1 {
   max-width: 60rem;
   min-height: 70vh;
   height: fit-content;
-  border-radius: 2rem;
+
   background: var(--bg-color);
   padding: 2rem;
   text-align: center;
@@ -106,7 +106,7 @@ button {
   width: 80%;
   height: 3.5rem;
   background-color: var(--accent-color);
-  border-radius: 2rem;
+
   margin: 2rem auto;
   text-transform: uppercase;
   font-size: 2.2rem;
@@ -188,7 +188,7 @@ i {
 /* Style the arrow inside the select element: */
 .select-selected:after {
   position: absolute;
-  content: "";
+  content: '';
   top: 14px;
   right: 10px;
   width: 0;
@@ -209,7 +209,8 @@ i {
   color: var(--bg-color);
   padding: 8px 16px;
   border: 1px solid transparent;
-  border-color: transparent transparent var(--accent-color) transparent;
+  border-color: transparent transparent var(--accent-color)
+    transparent;
   cursor: pointer;
 }
 

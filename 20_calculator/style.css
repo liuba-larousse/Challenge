@@ -1,3 +1,4 @@
+/** @format */
 body,
 div,
 h1,
@@ -25,7 +26,7 @@ body {
   font-size: 1.5rem;
   font-family: 'Open Sans', sans-serif;
   height: 100%;
-  background: linear-gradient(147deg, #ffe53b 0%, #fa709a 100%);
+  background: #363434;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -37,7 +38,7 @@ body {
 
 h1 {
   font-size: 5rem;
-  color: #21bf73;
+  color: #f7f8f8;
   text-align: center;
   letter-spacing: 1.5rem;
   margin-bottom: 2rem;
@@ -47,15 +48,15 @@ h1 {
   position: absolute;
   z-index: 1;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 5%;
   font-family: 'Bungee', cursive;
   color: #d9d9d9;
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .grid-container {
-  -webkit-transform: translateY(18%);
-          transform: translateY(18%);
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
   margin: 0 auto;
   width: 40rem;
   height: 54rem;
@@ -81,10 +82,10 @@ h1 {
 .display {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
-  grid-column: 1/span 4;
+  grid-column: 1 / span 4;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
-  grid-row: 1/span 1;
+  grid-row: 1 / span 1;
 }
 
 .span-2 {

@@ -1,6 +1,7 @@
+/** @format */
 @use "css/resets";
 body {
-  background-color: #ff9595;
+  background-color: #ffc7c7;
   color: #342b38;
   font-size: 1.4rem;
   margin: 2rem;
@@ -11,7 +12,7 @@ img {
 }
 
 h1 {
-  color: #2B5390;
+  color: #2b2b28;
   text-transform: uppercase;
   text-align: center;
 }
@@ -54,7 +55,7 @@ h1 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  border: 1px #bbf1c8 solid;
+  border: 1px #f7f7f7 solid;
 }
 
 .left.item-2 {
@@ -68,7 +69,7 @@ h1 {
       justify-self: center;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  border: 1px #bbf1c8 solid;
+  border: 1px #f7f7f7 solid;
 }
 
 .right.item-2 {
@@ -109,7 +110,7 @@ h1 {
       justify-self: center;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  border: 1px #bbf1c8 solid;
+  border: 1px #f7f7f7 solid;
 }
 
 .left.item-4 {
@@ -124,7 +125,7 @@ h1 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  border: 1px #bbf1c8 solid;
+  border: 1px #f7f7f7 solid;
 }
 
 .right.item-4 {
@@ -142,10 +143,10 @@ h1 {
 }
 
 .text {
-  border: 0.8rem #bbf1c8 dotted;
+  border: 0.8rem #f7f7f7 dotted;
   border-radius: 2rem;
   padding: 2rem;
-  background-color: #bbf1c82c;
+  background-color: #f7f7f72c;
 }
 
 .slide-in {

@@ -1,3 +1,5 @@
+/** @format */
+
 html,
 body,
 div,
@@ -24,28 +26,17 @@ body {
 
 body {
   font-size: 62.5%;
-  font-family: "Open Sans", sans-serif;
-}
-
-ol,
-ul {
-  list-style: none;
+  font-family: 'Open Sans', sans-serif;
 }
 
 //HEADER
 
 h1 {
   font-size: 4rem;
-  color: #fffb22;
+  padding: 2rem;
+  color: #ffffff;
   text-align: center;
-  font-family: "Black Ops One", cursive;
-}
-
-.header {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  margin-top: 2rem;
+  font-family: 'Black Ops One', cursive;
 }
 
 //BACKGROUNDS
@@ -66,66 +57,60 @@ h1 {
 .bg1 {
   background-image: url(../17_random_qoutes/images/bg1.jpeg);
   background-size: cover;
-  filter: saturate(85%);
+  filter: saturate(0%);
 }
 
 .bg2 {
   background-image: url(../17_random_qoutes/images/bg2.jpeg);
   background-size: cover;
-  filter: blur(1px);
-}
-
-.bg3 {
-  background-image: linear-gradient(25deg,
-      #fffb22 30%,
-      transparent 30% 75%,
-      #fffb22 75% 80%,
-      transparent 80% 90%,
-      #fffb22 90% 95%,
-      transparent 95%);
+  filter: blur(2px) contrast(120%);
 }
 
 //BOX WITH CONTENT
 
-.flex-container {
-  width: 22rem;
-  height: 22rem;
-  border: solid 2px #fffb2277;
+.wrap {
   position: absolute;
-  left: 50%;
-  margin-left: (-11rem);
-  transform: translateY(10rem);
-  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container {
+  min-width: 20rem;
+  min-height: 20rem;
+  width: 30vw;
+  height: fit-content;
+  border: solid 2px #ffffff;
+
   display: flex;
   flex-direction: column;
   text-align: center;
   background-color: #faeee735;
 }
 
-h2 {
-  margin-top: 1rem;
-  font-size: 1.6rem;
-  color: rgba(166, 26, 21, 0.605);
-}
-
 .btn {
-  width: 8rem;
-  height: 3rem;
-  background-color: #fffb2277;
+  width: 10rem;
+  height: 4rem;
+  background-color: #ffffff;
   font-size: 1rem;
-  border: #fffb22;
+  border: #ffffff;
   border-radius: 10px;
   align-self: center;
   margin-top: 1rem;
 }
 
 .quote {
-  margin: 1rem 2rem 0rem 2rem;
+  margin: 2rem 2rem 0rem 2rem;
+  color: #ffffff;
+  font-style: italic;
 }
 
 .author {
-  font-style: italic;
   margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 1200px) {

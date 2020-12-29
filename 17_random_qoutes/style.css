@@ -1,3 +1,4 @@
+/** @format */
 html,
 body,
 div,
@@ -25,26 +26,15 @@ body {
 
 body {
   font-size: 62.5%;
-  font-family: "Open Sans", sans-serif;
-}
-
-ol,
-ul {
-  list-style: none;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
   font-size: 4rem;
-  color: #fffb22;
+  padding: 2rem;
+  color: #ffffff;
   text-align: center;
-  font-family: "Black Ops One", cursive;
-}
-
-.header {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  margin-top: 2rem;
+  font-family: 'Black Ops One', cursive;
 }
 
 .isolate {
@@ -63,31 +53,40 @@ h1 {
 .bg1 {
   background-image: url(../17_random_qoutes/images/bg1.jpeg);
   background-size: cover;
-  -webkit-filter: saturate(85%);
-          filter: saturate(85%);
+  -webkit-filter: saturate(0%);
+          filter: saturate(0%);
 }
 
 .bg2 {
   background-image: url(../17_random_qoutes/images/bg2.jpeg);
   background-size: cover;
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
+  -webkit-filter: blur(2px) contrast(120%);
+          filter: blur(2px) contrast(120%);
 }
 
-.bg3 {
-  background-image: linear-gradient(25deg, #fffb22 30%, transparent 30% 75%, #fffb22 75% 80%, transparent 80% 90%, #fffb22 90% 95%, transparent 95%);
+.wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .flex-container {
-  width: 22rem;
-  height: 22rem;
-  border: solid 2px #fffb2277;
-  position: absolute;
-  left: 50%;
-  margin-left: -11rem;
-  -webkit-transform: translateY(10rem);
-          transform: translateY(10rem);
-  z-index: 1;
+  min-width: 20rem;
+  min-height: 20rem;
+  width: 30vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: solid 2px #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,18 +98,12 @@ h1 {
   background-color: #faeee735;
 }
 
-h2 {
-  margin-top: 1rem;
-  font-size: 1.6rem;
-  color: rgba(166, 26, 21, 0.605);
-}
-
 .btn {
-  width: 8rem;
-  height: 3rem;
-  background-color: #fffb2277;
+  width: 10rem;
+  height: 4rem;
+  background-color: #ffffff;
   font-size: 1rem;
-  border: #fffb22;
+  border: #ffffff;
   border-radius: 10px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -119,12 +112,15 @@ h2 {
 }
 
 .quote {
-  margin: 1rem 2rem 0rem 2rem;
+  margin: 2rem 2rem 0rem 2rem;
+  color: #ffffff;
+  font-style: italic;
 }
 
 .author {
-  font-style: italic;
   margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 1200px) {

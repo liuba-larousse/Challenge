@@ -1,3 +1,4 @@
+/** @format */
 body,
 div,
 h1,
@@ -28,15 +29,15 @@ html {
 }
 
 :root {
-  --accent-color: #64D39F;
-  --text-color: #FFFDF5;
-  --accent-color-2: #45F4DA;
+  --accent-color: #fcfcfc;
+  --text-color: #050505;
+  --accent-color-2: #bdbdbd;
 }
 
 body {
   font-size: 1.8rem;
   font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(198deg, #f76e5a 0%, #d03e20 66%, #7a2624 100%);
+  background: white;
   background-repeat: no-repeat;
 }
 
@@ -50,7 +51,7 @@ input {
 
 h1 {
   font-family: 'Pacifico', cursive;
-  color: var(--accent-color);
+  color: var(--text-color);
   font-size: 6rem;
   text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3), 2px 2px 2px rgba(69, 244, 218, 0);
 }
@@ -63,14 +64,21 @@ h1 {
   display: block;
   margin: 0 auto;
   background: rgba(255, 0, 0, 0.4);
-  border: red 0.5rem solid;
+  border: red 1px solid;
   border-radius: 2rem;
   text-align: center;
   color: var(--text-color);
   height: 8rem;
-  width: 15rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  width: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition: display 0.5s ease-in;
   transition: display 0.5s ease-in;
 }
@@ -89,13 +97,14 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 2rem;
+  border: 2px solid black;
 }
 
 .visuallyhidden {
   display: none;
 }
 
-input[type=text] {
+input[type='text'] {
   width: 75%;
   height: 3rem;
   border: none;
@@ -106,7 +115,7 @@ input[type=text] {
 .btn-add {
   width: 25%;
   border: none;
-  background: var(--accent-color);
+  background: #e2e0e0;
   color: var(--text-color);
   font-size: 1.8rem;
   -webkit-transition: all 0.3s ease;
@@ -205,7 +214,7 @@ input[type=text] {
   width: 30%;
   height: 4rem;
   border: none;
-  background: var(--accent-color);
+  background: #e2e0e0;
   color: var(--text-color);
   font-size: 1.8rem;
   -webkit-transition: all 0.3s ease;
